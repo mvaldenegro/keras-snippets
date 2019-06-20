@@ -1,2 +1,2 @@
 # keras-snippets
-Keras code snippets to do useful and repetitive tasks
+Useful snippets of Keras code, including feature visualization, uncertainty quantification, etc.
