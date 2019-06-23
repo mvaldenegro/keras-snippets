@@ -48,10 +48,7 @@ def gradCAM(input_image, model, layer_name, output_idx, normalize_grad=False):
         mean_axis = (0, 1)
 
     weights = np.mean(grads_val, axis=mean_axis)
-    print(output.shape)
-    print(weights.shape)
     cam = np.dot(output, weights)
-    print(cam.shape)
 
     W, H = input_image.shape[1], input_image.shape[2]
 
